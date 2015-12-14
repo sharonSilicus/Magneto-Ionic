@@ -1,0 +1,54 @@
+<ion-view view-title="Browse Store">
+    <ion-content>
+        <!-- Third party activity Indicator -->
+        <div ng-activity-indicator="DottedDark" class="activityIndicatorCSS"></div>
+        
+        <!-- Usign ng-repeat directive to populate the product data -->
+        <div class="animated flipInY list card" ng-repeat="product in products">
+            <!-- Avatar for the item: if available -->
+            <div class="item item-avatar">
+                <img src="img/logo_magento.png">
+                    <!-- Product name and Price from the product object -->
+                    <h2> {{product.name}} </h2>
+                    <p> Price: {{product.final_price_with_tax | currency}} </p>
+            </div>
+            
+            <!-- Other Details of the Product from the product object -->
+            <div class="item item-body">
+                
+                <!-- Product Image -->
+                <img class="full-image" src={{product.image_url}}>
+                    
+                    <!-- Product Description from product object -->
+                    <h2>Description</h2>
+                    
+                    <p>
+                        {{product.description}}
+                    </p>
+                    
+                    <p>
+                        <!-- Hardcoded Other information as web api in Magento not available, but just to demostrate the icons from ionic -->
+                        <a href="#" class="subdued">1 Like</a>
+                        <a href="#" class="subdued">5 Comments</a>
+                    </p>
+            </div>
+            
+            <!-- The tab icons are not assigned -->
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-thumbsup"></i>
+                    Like
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-chatbox"></i>
+                    Comment
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+        </div>
+        
+    </ion-content>
+</ion-view>

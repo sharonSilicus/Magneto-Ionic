@@ -1,0 +1,12 @@
+<ion-view view-title="Categories">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="category in categories" href="#/app/playlists/{{category.id}}" class="item item-avatar animated flipInY">
+            <img style="height: 20px, with: 20px" src="img/{{category.image}}">
+            <h2> {{category.title}} </h2>
+            <p> {{category.description}} </p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

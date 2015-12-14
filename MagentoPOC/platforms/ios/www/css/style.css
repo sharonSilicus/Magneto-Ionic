@@ -1,0 +1,39 @@
+/* Empty. Add your own CSS if you like */
+.loginimg
+{
+    width: 150px;
+    height: 131px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin:0 auto;
+/*    transform: translateY(-50%);*/
+    top: 20%;
+    left: 10%;
+    position:absolute;
+    z-index:100;
+}
+
+.activityIndicatorCSS
+{
+    text-align: center;
+    margin:0 auto;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 45%;
+    position:absolute;
+    z-index:100;
+}
+
+.categoryImage
+{
+    width: 30px;
+    height: 30px;
+/*    text-align: center;*/
+/*    padding-bottom: 20px;*/
+/*    margin:0 auto;*/
+/*    /*    transform: translateY(-50%);*/*/
+/*    top: 20%;*/
+/*    left: 10%;*/
+/*    position:absolute;*/
+/*    z-index:100;*/
+}
